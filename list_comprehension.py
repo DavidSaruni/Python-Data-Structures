@@ -25,9 +25,9 @@ print(comp)
 comp = []
 for x in [1,2,3]:
     for y in [3,1,4]:
-        if x!=y:
+        if x==y: #for elements that are equal
             comp.append((x,y))
-            print(comp)
+print(comp)
             
 vector = [-4,-2,0,2,4]
 print(vector)
@@ -87,4 +87,17 @@ for i in range(4):
         transposed_row.append(row[i])
     transposed.append(transposed_row)
 print(transposed)
-    
+
+# The del statement
+print(" -- del statement -- ")
+a =[2,3,1,4,6,7,8]
+print(a)
+del a[1] # remove an element given it's index
+print(a)
+del a[2:4] # remove elements in a given range
+print(a)
+del a[:] # clear entire list
+
+# you can delete entire variable 
+del a
+# if you print it will raise an error because the variable is deleted
